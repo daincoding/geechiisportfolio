@@ -6,6 +6,8 @@ align-items: center;
 
 .links {
     display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     margin: 25px
 }
 
