@@ -1,0 +1,49 @@
+.header-middle {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.links {
+    display: flex;
+    margin: 25px
+}
+
+a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    position: relative;
+    width: 50px;
+    margin: 0.25rem 1rem;
+    img {
+        width: 50px;
+    }
+    &::before {
+        content: "";
+        opacity: 0;
+        transition: all 0.2s;
+        position: absolute;
+        background: radial-gradient(#929aaa 10%, transparent 70%);
+        top: -25px;
+        left: -25px;
+        height: 100px;
+        width: 100px;
+        border-radius: 100%;
+        z-index: -5;
+    }
+    div.hidden-label {
+        color: #fff;
+        padding-top: 10px;
+        font-size: 0.85rem;
+        font-family: 'Staatliches', sans-serif;
+        transition: all 0.2s;
+        opacity: 0;
+    }
+    &:focus, &:hover {
+        &::before, div.hidden-label {
+            opacity: 1;
+        }
+    }
+}
