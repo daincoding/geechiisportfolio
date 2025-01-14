@@ -1,0 +1,32 @@
+.gallery {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+}
+
+.category {
+    display: flex; 
+    align-items: flex-start;
+    justify-content: space-between; 
+    gap: 20px; 
+}
+
+.category img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover; 
+}
+
+.category .text {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+}
+
+.category h3 {
+    margin: 0; 
+}
+
+.category p {
+    margin: 0; 
+}
