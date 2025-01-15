@@ -1,1 +1,7 @@
-<p>services works!</p>
+<!DOCTYPE html>
+
+<div class="service-wrapper">
+<div *ngFor="let service of services; index as i" class="service" [style.left]="i * (90 / services.length) + '%'" [style.top]="((i + 1) % 3) * 33 + '%'" [style.transform]="getRandomRotation()">
+{{service}}
+</div>
+</div>
